@@ -14,9 +14,12 @@ const ComponentsScreen = () => {
 const styles = StyleSheet.create({
     textStyle: {
         fontSize: 45,
+        fontStyle:'bond',
+        textAlign:'center'
     },
     subHeaderStyle: {
-        fontSize: 20
+        fontSize: 20,
+        textAlign:'center'
     }
 });
 

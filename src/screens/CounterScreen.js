@@ -27,9 +27,10 @@ const CounterScreen=()=> {
     const [state, dispatch]= useReducer(reducer, { count:0 })
 
     return (
-    <View>
+    <View> 
         <Button 
         title="Increase" 
+        color='#BF4565'
         onPress={()=> {
             dispatch({ type: 'increment',payload:1})
         // setCounter(counter +1);
@@ -37,6 +38,7 @@ const CounterScreen=()=> {
         />
         <Button 
         title="Decrease" 
+        color= '#93BFA3'
         onPress={()=> {
             dispatch({ type: 'decrement',payload:1})
         // setCounter(counter -1);
@@ -44,6 +46,7 @@ const CounterScreen=()=> {
         />
         <Button 
         title="Double Counter" 
+        color='#F2EFC4'
         onPress={()=> {
             dispatch({ type: 'doubleCounter'})
         // setCounter(counter+counter);
@@ -51,6 +54,7 @@ const CounterScreen=()=> {
         />
         <Button 
         title="square" 
+        color='#F2B680'
         onPress={()=> {
             dispatch({ type: 'square'})
         // setCounter(counter*counter);
@@ -58,6 +62,7 @@ const CounterScreen=()=> {
         />
         <Button 
         title="Reset" 
+        color='#F29999'
         onPress={()=> {
             dispatch({ type: 'reset'})
         // setCounter(counter-counter);
@@ -66,6 +71,7 @@ const CounterScreen=()=> {
         
         <Button 
         title="Refresh" 
+        color='#685C79'
         onPress={()=> {
             dispatch({ type: 'refresh'})
         //setCounter(0);
